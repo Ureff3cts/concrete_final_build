@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TJ's Asphalt and Concrete Repair - Home</title>
+  <meta name="description" content="TJ's Asphalt and Concrete Repair - Home: Quality Asphalt and Concrete services." />
+  <link rel="stylesheet" href="styles.css" />
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  background-color: hwb(0 50% 49%);
+  color: #0a0a0a;
+  font-family: Georgia, serif;
+}
+
+a {
+  color: #131212;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #D41E1E;
+}
+/* Header and Navigation */
+header {
+  background-color: #6e6c6c; /* Fallback color */
+  background-image: url('background .webp');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #D41E1E;
+  padding: 10px 0;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #888585;
+  background-image: url('images/Backgrounds/new background 3.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #e0f805;
+}
+
+.hero-container h1 {
+  font-size: 52px;
+  margin-bottom: 50px;
+  color: #fd0404;
+  text-shadow: #080808 4px 4px 0, #0e0d0d 4px 4px 0, #ffbc03 6px 6px 0, #ffbc03 8px 8px 0, #000 2px 2px 5px;
+}
+
+.hero-container p {
+  font-size: 32px;
+}
+
+/* Services Section */
+#services {
+    background-image: url('background .webp');
+    background-size: cover;
+    background-position: center;
+    font-size: 28px;
+}
+
+#services h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fd0404;
+    text-shadow: #080808 4px 4px 0, #050505 4px 4px 0, #ffbc03 6px 6px 0, #ffbc03 8px 8px 0;
+    font-size: 48px;
+}
+
+.service,
+.service-item {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #f3f1f1;
+    border-radius: 5px;
+    background-image: url('background .webp');
+    transition: transform 0.3s ease;
+}
+
+.service:hover,
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service h3,
+.service-item h3 {
+    margin-bottom: 10px;
+    color: #fd0404;
+    text-shadow: #080808 4px 4px 0, #0e0d0d 4px 4px 0, #ffbc03 6px 6px 0, #ffbc03 8px 8px 0;
+    font-size: 32px;
+}
+.service h4,
+.service-item h4 {
+   text-align: center;
+    margin-bottom: 40px;
+    color: #fd0404;
+    text-shadow: #080808 4px 4px 0, #0e0d0d 4px 4px 0, #ffbc03 6px 6px 0, #ffbc03 8px 8px 0;
+    font-size: 38px;
+}
+
+.service p,
+.service-item p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    color: #0f0f0f;
+}
+.text-large h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fd0404;
+  text-shadow: #080808 4px 4px 0, #0e0d0d 4px 4px 0, #ffbc03 6px 6px 0, #ffbc03 8px 8px 0;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0a0a;
+  border-top: 2px solid #D41E1E;
+ 
+}
+
+.carousel-section {
+  padding: 40px 20px;
+  background: #928f8f;
+  text-align: center;
+}
+#asphaltCarousel {
+  width: 100%; /* Adjust as needed */
+  max-width: 800px; /* Keeps it responsive */
+  margin: auto; /* Centers the carousel */
+  overflow: hidden; /* Hides overflowing content */
+}
+
+.carousel {
+  display: flex; /* Enables horizontal scrolling */
+  justify-content: center; /* Centers carousel items */
+  align-items: center; /* Aligns items vertically */
+}
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.carousel-controls {
+  margin-top: 10px;
+}
+
+.active.img-medium.clickable-image {
+  width: 100%; /* Adjust this percentage as needed */
+  max-width: 700px; /* Ensures it doesn't exceed a certain width */
+  height: auto; /* Maintains aspect ratio */
+}
+
+
+.gallery-contact button {
+  background: #D41E1E;
+  border: none;
+  color: #faf7f7;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Georgia, serif;
+  font-size: large;
+}
+
+.gallery-contact button:hover,
+.carousel-controls button:hover {
+  opacity: 0.8;
+}
+.carousel-controls button {
+  background: #D41E1E;
+  border: none;
+  color: #faf7f7;
+  padding: 16px 18px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  border-radius: 5px;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #0c0c0c;
+  padding: 10px 0;
+  height: 150px;
+ font-size: 28px;
+}
+
+/* Contact modal adjustments */
+#contactModal .modal-content {
+  padding: 30px;
+}
+
+#contactModal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff6600;
+  color: rgb(17, 17, 17);
+  padding: 10px;
+  border: none;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform:scale(0)
+  }
+  to {
+    transform:scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f70505;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Contact Card Styling */
+.contact-card {
+  background-color: #444;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  max-width: 400px; /* Reduced width */
+  text-align: center;
+  font-size: 24px;
+  color: #0e0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card.full {
+  max-width: 400px; /* Reduced width */
+  margin: 0 auto;
+  background: #868585;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #050505;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the body and text with white color, and add size to bold text and body of this section */
+#galleries-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #070707;
+  font-size: 18px; /* Adjust body font size */
+}
+
+/* Bold text styling with Georgia font, white color, red & yellow shadows, black outline, and size */
+#galleries-section strong {
+  font-family: Georgia, serif;
+  color: #fd0404;
+  text-shadow: #0c0c0c 4px 4px 0, #0e0d0d 4px 4px 0, #ffbc03 6px 6px 0, #030303 8px 8px 0;
+  font-size: 24px; /* Adjust bold text size */
+}
+/* Resources Page Styles */
+.contact-card.full {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #868585;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #0a0a0a;
+}
+
+.contact-card.full form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card.full label {
+  margin-top: 10px;
+}
+
+.contact-card.full input,
+.contact-card.full textarea,
+.contact-card.full select {
+  padding: 8px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.contact-card.full {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #646464;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #0e0d0d;
+}
+
+.contact-card.full form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card.full label {
+  margin-top: 10px;
+}
+
+.contact-card.full input,
+.contact-card.full textarea,
+.contact-card.full select {
+  padding: 8px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+
+/* Footer Icon Styling */
+.footer-icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-icon img {
+
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Utility Classes for Text Sizing */
+.text-small {
+  font-size: 24px;
+  color: #fd0404;
+}
+.text-medium {
+  font-size: 32px;
+  text-align: center;
+  color: #fdfcfc;
+  text-shadow: #0c0c0c 2px 2px 0, #0e0d0d 2px 2px 0, #ffbc03 4px 4px 0, #030303 6px 6px 0;
+}
+
+.text-large {
+  font-size: 38px;
+  text-align: center;
+  color: #fd0404;
+  text-shadow: #0c0c0c 4px 4px 0, #0e0d0d 4px 4px 0, #ffbc03 6px 6px 0, #f8f1f1 8px 8px 0;
+}
+
+.text-large h2 {
+  font-size: 38px;
+  text-align: center;
+  color: #fdfcfc;
+  text-shadow: #fa0606 4px 4px 0, #f80303 4px 4px 0, #ffbc03 6px 6px 0, #f3f3f3 8px 8px 0;  
+}
+/* Utility Classes for Image Sizing */
+.img-small {
+  width: 100px;
+  height: auto;
+}
+
+.img-medium {
+  width: 50px;
+  height: 50px;
+}
+.img-large {
+  width: 200px;
+  height: auto;
+}
+
+</style>
+</head>
+<body>
+  <!-- Fixed Header Navigation -->
+  <header>
+    <nav>
+      <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#asphaltGallery">Gallery</a></li>
+      <li><a href="#full-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1 class="text-large">TJ's Asphalt and Concrete Repair</h1>
+      <p class="text-medium">Quality Concrete &amp; Asphalt Repair Services</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h1 class="text-large">Our Services</h1>
+    <div class="service asphalt">
+      <h3>Asphalt Repair</h3>
+      <p>
+        We specialize in repairing and maintaining asphalt surfaces for driveways, parking lots, and walkways. Our method has evolved to focus on skilled craftsmanship rather than just simple fixes, ensuring a smooth, long-lasting finish.
+      </p>
+    </div>
+    <div class="service concrete">
+      <h3>Concrete Repair</h3>
+      <p>
+        Our concrete services extend beyond basic patching. We address structural integrity and aesthetic appeal for sidewalks, foundations, and more. Trust us to revitalize your concrete surfaces with precision and detailed care.
+      </p>
+    </div>
+    <div class="service promo">
+      <h4>Special Promo</h4>
+
+    <div class="promo">
+      <p>Check out our offseason dates for extra savings!</p>
+    </div>
+  </section>
+
+    <main>
+    <!-- Asphalt Gallery Section -->
+    <section id="asphaltGallery" class="carousel-section">
+      <h2 class="text-large">The Art of Asphalt</h2>
+      <div class="carousel" id="asphaltCarousel">
+        <!-- 10 images for Asphalt gallery -->
+        <img src="Asphalt image 1.jpg" alt="Asphalt Image 1" class="active img-medium clickable-image">
+        <img src="Asphalt image 2.jpg" alt="Asphalt Image 2" class="img-medium clickable-image">
+        <img src="asphalt image 3.jpg" alt="Asphalt Image 3" class="img-medium clickable-image">
+        <img src="asphalt image 4.jpg" alt="Asphalt Image 4" class="img-medium clickable-image">
+        <img src="asphalt image 5.jpg" alt="Asphalt Image 5" class="img-medium clickable-image">
+        <img src="asphalt image 6.jpg" alt="Asphalt Image 6" class="img-medium clickable-image">
+        <img src="aspahlt image 7.jpg" alt="Asphalt Image 7" class="img-medium clickable-image">
+        <img src="aspahlt image 8.jpg" alt="Asphalt Image 8" class="img-medium clickable-image">
+        <img src="asphalt image 9.jpg" alt="Asphalt Image 9" class="img-medium clickable-image">
+        <img src="asphalt image 10.jpg" alt="Asphalt Image 10" class="img-medium clickable-image">
+      </div>
+      <div class="gallery-contact">
+        <button onclick="openContactModal('Asphalt')" type="button">Contact About Asphalt</button>
+      </div>
+    </section>
+    
+    <!-- Concrete Gallery Section -->
+    <section id="concreteGallery" class="carousel-section">
+      <h2 class="text-large">The Craft of Concrete</h2>
+      <div class="carousel" id="concreteCarousel">
+        <!-- 10 images for Concrete gallery -->
+        <img src="concrete image 1.jpg" alt="Concrete Image 1" class="active img-medium clickable-image">
+        <img src="concrete image 2.jpg" alt="Concrete Image 2" class="img-medium clickable-image">
+        <img src="concrete image 11.jpg" alt="Concrete Image 3" class="img-medium clickable-image">
+        <img src="concrete image 4.jpg" alt="Concrete Image 4" class="img-medium clickable-image">
+        <img src="concrete image 5.jpg" alt="Concrete Image 5" class="img-medium clickable-image">
+        <img src="concrete image 6.jpg" alt="Concrete Image 6" class="img-medium clickable-image">
+        <img src="concrete image 7.jpg" alt="Concrete Image 7" class="img-medium clickable-image">
+        <img src="concrete image 8.jpg" alt="Concrete Image 8" class="img-medium clickable-image">
+        <img src="concrete image 9.jpg" alt="Concrete Image 9" class="img-medium clickable-image">
+        <img src="concrete image 10.jpg" alt="Concrete Image 10" class="img-medium clickable-image">
+      </div>
+      <div class="gallery-contact">
+        <button onclick="openContactModal('Concrete')" type="button">Contact About Concrete</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image Modal (for enlarging gallery images) -->
+  <div id="imgModal" class="modal">
+    <span class="close" id="imgModalClose">&times;</span>
+    <div class="modal-content-wrapper">
+      <button id="prevImg" class="nav-button left-button" type="button">&lt;</button>
+      <img class="modal-content" id="modalImg" alt="Enlarged view of selected image">
+      <button id="nextImg" class="nav-button right-button" type="button">&gt;</button>
+    </div>
+    <div id="imgCaption"></div>
+  </div>
+
+  <!-- Full Contact Card Section -->
+    <section id="full-contact">
+      <h2 class="text-large">Contact Us!</h2>
+      <div class="contact-card full">
+        <div class="business-info">
+          <h3 class="text-medium">TJ's Asphalt &amp; Concrete Repair</h3>
+          <p>Proudly Serving The Central Florida Areas</p>
+          <p>Phone: (352) 830-7407</p>
+          <p>Email: tjasphaltandconcrete@outlook.com</p>
+          <p>Website:tjsasphaltandconcreterepair.com</p>
+        </div>
+        <form id="resourceContactForm" action="mailto:tjasphaltandconcrete@outlook.com" method="post" enctype="text/plain">
+            <label for="resName">Name:</label>
+            <input type="text" id="resName" name="resName" required>
+                
+            <label for="resEmail">Email:</label>
+            <input type="email" id="resEmail" name="resEmail" required>
+                
+            <label for="resPhone">Phone:</label>
+            <input type="tel" id="resPhone" name="resPhone" required>
+
+            <label for="resAddress">Address:</label>
+            <input type="text" id="resAddress" name="resAddress" required>
+
+                            
+            <label for="resService">Select Service:</label>
+            <label for="resType">Type:</label>
+            <select id="resType" name="resType" required>
+            <option value="Commercial">Commercial</option>
+            <option value="Residential">Residential</option>
+            </select>
+
+            <label for="resCategory">Category:</label>
+            <select id="resCategory" name="resCategory" required onchange="updateSubOptions()">
+            <option value="">Select Category</option>
+            <option value="Asphalt">Asphalt</option>
+            <option value="Concrete">Concrete</option>
+            </select>
+
+            <label for="resSubCategory">Sub-Category:</label>
+            <select id="resSubCategory" name="resSubCategory" required>
+            <option value="">Select Sub-Category</option>
+            </select>
+
+  
+  
+  
+
+  <!-- JavaScript for Preview Carousels and Image Zoom -->
+  <script>
+    // Initialize preview carousels
+    function initPreviewCarousel(carouselId, prevBtnId, nextBtnId) {
+      const carousel = document.getElementById(carouselId);
+      const images = carousel.getElementsByTagName('img');
+      let currentIndex = 0;
+
+      function showImage(index) {
+        for (let i = 0; i < images.length; i++) {
+          images[i].classList.remove('active');
+        }
+        images[index].classList.add('active');
+      }
+
+      document.getElementById(prevBtnId).addEventListener('click', function() {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        showImage(currentIndex);
+      });
+
+      document.getElementById(nextBtnId).addEventListener('click', function() {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        showImage(currentIndex);
+      });
+    }
+
+    initPreviewCarousel('asphaltPreview', 'asphaltPrev', 'asphaltNext');
+    initPreviewCarousel('concretePreview', 'concretePrev', 'concreteNext');
+
+    // Make preview images clickable for zoom effect.
+    document.querySelectorAll('.preview-carousel img').forEach(img => {
+      img.addEventListener('click', function() {
+        document.getElementById("imgModal").style.display = "block";
+        document.getElementById("modalImg").src = this.src;
+      });
+    });
+
+    // Optional: Close modal when clicking outside the image.
+    window.addEventListener('click', function(event) {
+      if (event.target === document.getElementById("imgModal")) {
+        document.getElementById("imgModal").style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- JavaScript for Modal Functionality -->
+  <script>
+    // Image modal functionality for enlarged view when a gallery image is clicked
+    const imgModal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const imgCaption = document.getElementById("imgCaption");
+    const prevImg = document.getElementById("prevImg");
+    const nextImg = document.getElementById("nextImg");
+    const closeHover = document.getElementById("imgModalClose");
+    
+    // Setup variables for image gallery
+    let currentImageIndex = 0;
+    const imagesArray = Array.from(document.querySelectorAll('.clickable-image'));
+    
+    // Add click event to all clickable images
+    imagesArray.forEach((image, index) => {
+      image.addEventListener('click', function() {
+        imgModal.style.display = "block";
+        modalImg.src = this.src;
+        imgCaption.innerHTML = this.alt;
+        currentImageIndex = index;
+      });
+    });
+
+    // Close the image modal when the close button is clicked
+    document.getElementById("imgModalClose").addEventListener("click", function() {
+      imgModal.style.display = "none";
+    });
+
+    // Navigate to the previous image
+    prevImg.addEventListener("click", function() {
+      if (currentImageIndex > 0) {
+        currentImageIndex--;
+        modalImg.src = imagesArray[currentImageIndex].src;
+        imgCaption.innerHTML = imagesArray[currentImageIndex].alt;
+      }
+    });
+
+    // Navigate to the next image
+    nextImg.addEventListener("click", function() {
+      if (currentImageIndex < imagesArray.length - 1) {
+        currentImageIndex++;
+        modalImg.src = imagesArray[currentImageIndex].src;
+        imgCaption.innerHTML = imagesArray[currentImageIndex].alt;
+      }
+    });
+
+    // Adjust button positions to center vertically on the modal background
+    prevImg.style.position = "absolute";
+    prevImg.style.top = "50%";
+    prevImg.style.left = "10px";
+    prevImg.style.transform = "translateY(-50%)";
+
+    nextImg.style.position = "absolute";
+    nextImg.style.top = "50%";
+    nextImg.style.right = "10px";
+    nextImg.style.transform = "translateY(-50%)";
+
+    // Contact Modal functionality
+    function openContactModal(category) {
+      document.getElementById('modalCategory').textContent = category;
+      document.getElementById('serviceCategory').value = category;
+      document.getElementById('contactModal').style.display = 'block';
+    }
+    
+    document.getElementById('closeModal').addEventListener('click', function() {
+      document.getElementById('contactModal').style.display = 'none';
+    });
+    
+    // Close modals if clicking outside of them
+    window.addEventListener('click', function(event) {
+      if (event.target === document.getElementById('contactModal')) {
+        document.getElementById('contactModal').style.display = 'none';
+      }
+      if (event.target === imgModal) {
+        imgModal.style.display = 'none';
+      }
+    });
+  </script>
+
+<script>
+            function updateSubOptions() {
+              const category = document.getElementById('resCategory').value;
+              const subCategory = document.getElementById('resSubCategory');
+              subCategory.innerHTML = ''; // Clear existing options
+
+              if (category === 'Asphalt') {
+              const asphaltOptions = [
+              'Asphalt Repair',
+              'Asphalt Resurfacing',
+              'Asphalt Sealcoating',
+              'Asphalt Striping',
+              'Asphalt Crack Filling',
+              'Asphalt Patching',
+              'Asphalt Sealant',
+              'Asphalt Driveway',
+              'Asphalt Parking Lots'
+              ];
+              asphaltOptions.forEach(option => {
+              const opt = document.createElement('option');
+              opt.value = option;
+              opt.textContent = option;
+              subCategory.appendChild(opt);
+              });
+              } else if (category === 'Concrete') {
+              const concreteOptions = [
+              'Concrete Resurfacing',
+              'Concrete Repair',
+              'Concrete Crack Filling',
+              'Concrete Patching',
+              'Concrete Sealcoating',
+              'Concrete Driveways',
+              'Concrete Patios',
+              'Concrete Sidewalks'
+              ];
+              concreteOptions.forEach(option => {
+              const opt = document.createElement('option');
+              opt.value = option;
+              opt.textContent = option;
+              subCategory.appendChild(opt);
+              });
+              }
+            }
+            </script>
+                    
+          <label for="resMessage">Message:</label>
+          <textarea id="resMessage" name="resMessage" rows="5" required></textarea>
+                    
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  <footer>
+    <div class="footer-icon">
+      <img src="bonded.png" alt="Site Icon" class="img-small">
+    </div>
+    <p>&copy; 2025 TJ's Asphalt &amp; Concrete Repair. All rights reserved.</p>
+    <p>Website by <a href="https://www.ureff3cts.site" target="_blank" rel="noopener">Ureff3cts</a></p>
+  </footer>
+</body>
+</html>

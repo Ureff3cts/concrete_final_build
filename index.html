@@ -228,19 +228,17 @@
         margin: 0;
         overflow: visible;
       }
+
       .promo { flex: 1; text-align: center; }
       .promo .text-Xlarge {
+        /* replaced gradient/stroke with a solid site color */
         font-size: 42px;
         font-weight: 700;
         margin-bottom: 10px;
-        background: linear-gradient(to right, red, orange, yellow);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        -webkit-text-stroke: 1.2px #000000;
+        color: #850505; /* solid color (matches header/accent) */
+        /* removed background-clip, -webkit-text-fill-color, and -webkit-text-stroke */
       }
-      .promo .text-medium { font-size: 28px; color: #000000; line-height: 1.2; }
+      .promo .text-medium { font-size: 28px; color: #f70606; line-height: 1.2; }
       .promo-image {
         position: absolute;
         top: -105px;
